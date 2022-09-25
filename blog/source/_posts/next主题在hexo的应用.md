@@ -9,20 +9,115 @@ categories:
     - hexo
 ---
 
-### 添加评论功能
-依次尝试了next默认提供的几个评论插件：  
-* disqus: 国内被墙，不然做的最好的一个，next官方采用本方案  
-* changyan:  追评UI个人觉得不够简洁  
-* livere: UI不习惯  
-* gitalk: 国内网络环境不好，Network Error  
-* utterances: 很棒，缺点是不能追评    
-暂时先用着utterances。  
+## Next主题插件
+
+### PDF
+
+{% pdf https://www.orimi.com/pdf-test.pdf %}
+
+### Mermaid
+
+(Mermaid在线生成网站)[https://mermaid-js.github.io/mermaid-live-editor/]
+
+{% mermaid %}
+graph TD
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me think}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[fa:fa-car Car]
+{% endmermaid %}
+
+### 群组图片
+
+```
+{% grouppicture [number]-[layout] %}
+{% endgrouppicture %}
+```
+或者
+```
+{% gp [number]-[layout] %}
+{% endgp %}
+```
+
+* `[number]`: 图片总数
+* `[layout]`: 布局
+
+例子：
+```markdown
+{% grouppicture 3-3 %}
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+{% endgrouppicture %}
+```
+{% grouppicture 3-3 %}
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+{% endgrouppicture %}
+
+
+### 按钮
+
+```
+{% button url, text, icon [class], [title] %}
+```
+或者  
+```
+{% btn url, text, icon [class], [title] %}
+```
+示例:
+
+单链接：
+<div class="text-center">{% btn https://github.com, GitHub, fab fa-github fa-fw fa-lg, GitHub %}</div>
+
+前后链接：
+
+<div class="text-center">{% btn #, Previous Chapter, arrow-left fa-fw fa-lg, Previous Chapter (Full Image) %} {% btn #, Next Chapter, arrow-right fa-fw fa-lg, Next Chapter (Label) %}</div></div>
+
+其他按钮：
+
+ {% btn #,, fab fa-edge %} `{% btn #,, fab fa-edge %}`
+ 
+ {% btn #,, times %} `{% btn #,, times %}`
+ 
+ {% btn #,, circle-notch %} `{% btn #,, circle-notch %}`
+
+ {% btn #,, italic %} `{% btn #,, italic %}`
+
+ {% btn #,, fab fa-scribd %} `{% btn #,, fab fa-scribd %}`
+
+ {% btn #,, fab fa-google %} `{% btn #,, fab fa-google %}`
+
+ {% btn #,, fab fa-chrome %} `{% btn #,, fab fa-chrome %}`
+
+ {% btn #,, fab fa-opera %} `{% btn #,, fab fa-opera %}`
+
+ {% btn #,, fab fa-opera %} `{% btn #,, gem fa-rotate-270 %}`
+
+
+
+
+
+
+
+## 添加评论功能
+依次尝试了next默认提供的几个评论插件：
+
+* disqus: 国内被墙，不然做的最好的一个，next官方采用本方案
+* changyan:  追评UI个人觉得不够简洁
+* livere: UI不习惯
+* gitalk: 国内网络环境不好，Network Error
+* utterances: 很棒，缺点是不能追评
+
+暂时先用着utterances。
 
 这里要吐槽一下gitalk，如果你和我一样域名类似于`realmorty.top`，那么在创建GitHub Application时`Authorization callback URL`
 一定要是`https://realmorty.top`，其他的比如`https://www.realmorty.top`会报错：回调网址与GitHub默认网址不符。另外Homepage URL
 和Authorization callback URL我写的是一样的。
 
-### 添加新的文件夹（page）
+## 添加新的文件夹（page）
 初始化的hexo没有categories功能，需要新建该分类。  
 ```bash
 hexo new page categories

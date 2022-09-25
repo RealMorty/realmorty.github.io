@@ -29,6 +29,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - lib/**/*
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -50,6 +51,8 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+  exclude_languages:
+    - mermaid
 prismjs:
   enable: false
   preprocess: true
@@ -107,3 +110,10 @@ deploy:
   branch: main
   token: ''
   message: blog update {{ now('YYYY-MM-DD HH:mm:ss') }}
+
+# search service
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html

@@ -5,8 +5,10 @@ categories:
 date: 2022-09-23 10:38:05
 tags:
 ---
+  
+
 ## 实用的hexo md渲染组件
-#### 提示小插件
+### 提示小插件
 ```markdown
 {% note default %}default{% endnote %}
 {% note primary %}primary{% endnote %}
@@ -22,16 +24,16 @@ tags:
 {% note warning %}warning{% endnote %}
 {% note danger %}danger{% endnote %}
 
-#### 图片
+### 图片
 ```markdown
 1. {% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %}
 2. !()[]
 ```
-{% img [class names] /images/屏幕截图102742.jpg [80px] [20px] '"title text" "alt text"' %}
-安装了插件，可以解决图片路径问题，需要建立文件夹：`source\images`  
+{% img [class names] /images/屏幕截图102742.jpg %}
+安装以下插件解决图片路径问题，需要建立文件夹：`source\images`  
 `npm i hexo-easy-images -s`
  
-#### 代码块流程
+### 代码块流程
 
 ```
    {% tabs adding-tags-page %}
@@ -50,7 +52,10 @@ tags:
 ![代码块流程图](/images/屏幕截图102742.jpg)
 {% endnote %}
 
+---
+
 ## md语法测试
+
 $$e^2$$
 
 $$
