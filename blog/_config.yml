@@ -106,3 +106,4 @@ deploy:
   repo: https://github.com/RealMorty/realmorty.github.io
   branch: main
   token: ''
+  message: blog update {{ now('YYYY-MM-DD HH:mm:ss') }}
