@@ -283,109 +283,6 @@ alt="img" />
       </tags>
   </entry>
   <entry>
-    <title>hexo语法</title>
-    <url>/2022/09/23/hexo%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="日常写博客的-bash-流程">日常写博客的 bash 流程</h2>
-<ol type="1">
-<li>创建博客
-<ul>
-<li>hexo new post "file_name"</li>
-<li></li>
-</ul></li>
-<li>推送博文
-<ul>
-<li>hexo clean: 清理/public 文件夹</li>
-<li>hexo g -d: 重新生成/public 文件夹并推送到
-GitHub，博客网站依靠/public 的内容对外展示</li>
-<li>hexo s: 本地启动服务器，用于本地测试</li>
-</ul></li>
-</ol>
-<h2 id="用于同步博客源码的一般-git-流程">用于同步博客源码的一般 git
-流程</h2>
-<ol type="1">
-<li><p>项目刚开始建立时</p>
-<ul>
-<li><code>git init</code>: 在本地文件夹创建仓库</li>
-<li><code>git clone &lt;repo&gt;</code>: 从 GitHub
-拷贝项目到本地，一般可以从 GitHub 直接 copy 命令过来</li>
-</ul></li>
-<li><p>项目更新代码时</p>
-<ul>
-<li><code>git checkout -b &lt;branch_name&gt; origin/&lt;remote_branch&gt;</code>:
-拉取远程某特定分支到本地，并新建分支，切换到该分支</li>
-<li><code>git fetch origin</code> +
-<code>git merge origin/v0.1.20220925</code>: 获取远程更新的数据并同步
-merge 到本地，效果等同于<code>git pull</code></li>
-<li><code>git commit .</code>: 提交新修改的文件到本地暂存</li>
-<li><code>git push origin v0.1.20220925</code>: 将本地暂存文件 push
-到远程仓库</li>
-</ul></li>
-<li><p>一些 git info 的查看命令</p>
-<ul>
-<li><code>git config --list</code>: 查看 git 配置信息。</li>
-<li><code>git status</code>: 查看仓库当前状态，显示有变更的文件</li>
-<li><code>git log</code>: 查看历史提交信息</li>
-<li><code>git blame &lt;file&gt;</code>: 查看某个文件的历史修改信息</li>
-<li><code>git diff</code>: 比较暂存区文件和工作区文件的不同</li>
-</ul></li>
-</ol>
-<h2 id="实用的-hexo-md-渲染组件">实用的 hexo md 渲染组件</h2>
-<h3 id="首页文章预览">首页文章预览</h3>
-<p>在文章中需要截断的地方插入以下代码即可：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h3 id="提示小插件">提示小插件</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;default&#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125;primary&#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125;success&#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125;info&#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125;warning&#123;% endnote %&#125;</span><br><span class="line">&#123;% note danger %&#125;danger&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note default"><p>default</p>
-</div>
-<div class="note primary"><p>primary</p>
-</div>
-<div class="note success"><p>success</p>
-</div>
-<div class="note info"><p>info</p>
-</div>
-<div class="note warning"><p>warning</p>
-</div>
-<div class="note danger"><p>danger</p>
-</div>
-<h3 id="图片">图片</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. &#123;% img [class names] /path/to/image [width] [height] &#x27;&quot;title text&quot; &quot;alt text&quot;&#x27; %&#125;</span><br><span class="line">2. !()[]</span><br></pre></td></tr></table></figure>
-<img src="/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE102742.jpg" class="[class names]">
-<p>安装以下插件解决图片路径问题，需要建立文件夹：<code>source\images</code><br />
-<code>npm i hexo-easy-images -s</code></p>
-<h3 id="代码块流程">代码块流程</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs adding-tags-page %&#125;</span><br><span class="line"> &lt;!-- tab 新建页面 → --&gt;</span><br><span class="line"> ``` hexo new page tags```</span><br><span class="line"> &lt;!-- endtab --&gt;</span><br><span class="line"> &lt;!-- tab 添加属性 --&gt;</span><br><span class="line"> 在`tags/index.md`的front-matter中添加：</span><br><span class="line"> ``` type: tags  ```</span><br><span class="line"> &lt;!-- endtab --&gt;</span><br><span class="line"> &#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note success"><p>实现效果： <img src="/images/屏幕截图102742.jpg"
-alt="代码块流程图" /></p>
-</div>
-<hr />
-<h2 id="md-语法测试">md 语法测试</h2>
-<p><span class="math display">\[e^2\]</span></p>
-<p><span class="math display">\[
-\begin{equation} \label{eq1}
-e = m c ^ 2
-\end{equation}
-\]</span></p>
-<p>The famous matter-energy equation <span
-class="math inline">\(\eqref{eq1}\)</span> proposed by Einstein...</p>
-<p><span class="math display">\[
-\begin{equation} \label{eq2}
-\begin{aligned}
-a &amp;= b + c\\
-  &amp;= d + e + f \\
-  &amp;= h + i
-\end{aligned}
-\end{equation}
-\]</span></p>
-<p>Equation <span class="math inline">\(\eqref{eq2}\)</span> is a
-multi-line equation.</p>
-]]></content>
-      <categories>
-        <category>运维</category>
-        <category>hexo</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/09/22/hello-world/</url>
     <content><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very
@@ -409,7 +306,7 @@ you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9
 ]]></content>
   </entry>
   <entry>
-    <title>next主题在hexo的应用</title>
+    <title>Next主题在hexo的应用</title>
     <url>/2022/09/23/next%E4%B8%BB%E9%A2%98%E5%9C%A8hexo%E7%9A%84%E5%BA%94%E7%94%A8/</url>
     <content><![CDATA[<h2 id="next-主题插件">Next 主题插件</h2>
 <h3 id="mermaid">Mermaid</h3>
@@ -516,5 +413,108 @@ front-matter 中加入<code>type: categories</code></p>
         <tag>next</tag>
         <tag>hexo</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hexo语法</title>
+    <url>/2022/09/23/hexo%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="日常写博客的-bash-流程">日常写博客的 bash 流程</h2>
+<ol type="1">
+<li>创建博客
+<ul>
+<li>hexo new [layout] "file_name" // layout:
+post/draft/page/other_name</li>
+</ul></li>
+<li>推送博文
+<ul>
+<li>hexo clean: 清理/public 文件夹</li>
+<li>hexo g -d: 重新生成/public 文件夹并推送到
+GitHub，博客网站依靠/public 的内容对外展示</li>
+<li>hexo s: 本地启动服务器，用于本地测试</li>
+</ul></li>
+</ol>
+<h2 id="用于同步博客源码的一般-git-流程">用于同步博客源码的一般 git
+流程</h2>
+<ol type="1">
+<li><p>项目刚开始建立时</p>
+<ul>
+<li><code>git init</code>: 在本地文件夹创建仓库</li>
+<li><code>git clone &lt;repo&gt;</code>: 从 GitHub
+拷贝项目到本地，一般可以从 GitHub 直接 copy 命令过来</li>
+</ul></li>
+<li><p>项目更新代码时</p>
+<ul>
+<li><code>git checkout -b &lt;branch_name&gt; origin/&lt;remote_branch&gt;</code>:
+拉取远程某特定分支到本地，并新建分支，切换到该分支</li>
+<li><code>git fetch origin</code> +
+<code>git merge origin/v0.1.20220925</code>: 获取远程更新的数据并同步
+merge 到本地，效果等同于<code>git pull</code></li>
+<li><code>git commit .</code>: 提交新修改的文件到本地暂存</li>
+<li><code>git push origin v0.1.20220925</code>: 将本地暂存文件 push
+到远程仓库</li>
+</ul></li>
+<li><p>一些 git info 的查看命令</p>
+<ul>
+<li><code>git config --list</code>: 查看 git 配置信息。</li>
+<li><code>git status</code>: 查看仓库当前状态，显示有变更的文件</li>
+<li><code>git log</code>: 查看历史提交信息</li>
+<li><code>git blame &lt;file&gt;</code>: 查看某个文件的历史修改信息</li>
+<li><code>git diff</code>: 比较暂存区文件和工作区文件的不同</li>
+</ul></li>
+</ol>
+<h2 id="实用的-hexo-md-渲染组件">实用的 hexo md 渲染组件</h2>
+<h3 id="首页文章预览">首页文章预览</h3>
+<p>在文章中需要截断的地方插入以下代码即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h3 id="提示小插件">提示小插件</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;default&#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125;primary&#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125;success&#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125;info&#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125;warning&#123;% endnote %&#125;</span><br><span class="line">&#123;% note danger %&#125;danger&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default"><p>default</p>
+</div>
+<div class="note primary"><p>primary</p>
+</div>
+<div class="note success"><p>success</p>
+</div>
+<div class="note info"><p>info</p>
+</div>
+<div class="note warning"><p>warning</p>
+</div>
+<div class="note danger"><p>danger</p>
+</div>
+<h3 id="图片">图片</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. &#123;% img [class names] /path/to/image [width] [height] &#x27;&quot;title text&quot; &quot;alt text&quot;&#x27; %&#125;</span><br><span class="line">2. !()[]</span><br></pre></td></tr></table></figure>
+<img src="/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE102742.jpg" class="[class names]">
+<p>安装以下插件解决图片路径问题，需要建立文件夹：<code>source\images</code><br />
+<code>npm i hexo-easy-images -s</code></p>
+<h3 id="代码块流程">代码块流程</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs adding-tags-page %&#125;</span><br><span class="line"> &lt;!-- tab 新建页面 → --&gt;</span><br><span class="line"> ``` hexo new page tags```</span><br><span class="line"> &lt;!-- endtab --&gt;</span><br><span class="line"> &lt;!-- tab 添加属性 --&gt;</span><br><span class="line"> 在`tags/index.md`的front-matter中添加：</span><br><span class="line"> ``` type: tags  ```</span><br><span class="line"> &lt;!-- endtab --&gt;</span><br><span class="line"> &#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success"><p>实现效果： <img src="/images/屏幕截图102742.jpg"
+alt="代码块流程图" /></p>
+</div>
+<hr />
+<h2 id="md-语法测试">md 语法测试</h2>
+<p><span class="math display">\[e^2\]</span></p>
+<p><span class="math display">\[
+\begin{equation} \label{eq1}
+e = m c ^ 2
+\end{equation}
+\]</span></p>
+<p>The famous matter-energy equation <span
+class="math inline">\(\eqref{eq1}\)</span> proposed by Einstein...</p>
+<p><span class="math display">\[
+\begin{equation} \label{eq2}
+\begin{aligned}
+a &amp;= b + c\\
+  &amp;= d + e + f \\
+  &amp;= h + i
+\end{aligned}
+\end{equation}
+\]</span></p>
+<p>Equation <span class="math inline">\(\eqref{eq2}\)</span> is a
+multi-line equation.</p>
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>hexo</category>
+      </categories>
   </entry>
 </search>
