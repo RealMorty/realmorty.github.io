@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/09/22/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very
+first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for
+more info. If you get any problems when using Hexo, you can find the
+answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or
+you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>hexo</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Markdown语法</title>
     <url>/2022/09/23/Markdown%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h1 id="一标题">一、标题</h1>
@@ -283,27 +310,148 @@ alt="img" />
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/09/22/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very
-first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for
-more info. If you get any problems when using Hexo, you can find the
-answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or
-you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>
+    <title>Hexo Bugfix</title>
+    <url>/2022/09/26/hexo-bugfix/</url>
+    <content><![CDATA[<h2
+id="title-object-object-null"><code>title: '[object Object]': null</code></h2>
+<p>同样的还有<code>date: '[object Object]': null</code>，排查原因是在用
+VS code 的 prettier 插件格式化 md
+文件时（保存文件时自动格式化，因此不易察觉），会将 md 头文件
+front-matter 中的  `{{ }}` 格式化为 { { } }，导致变量无法自动填充。
+例如，我的 scaffolds/post.md（用于 hexo 生成模板文件）的 front-matter
+是：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">  - null</span><br><span class="line">categories:</span><br><span class="line">  - null</span><br><span class="line">description: ..</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>当我修改了 post.md 后保存文件时，prettier
+自动格式化，头文件变成了：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123; &#123; title &#125; &#125;</span><br><span class="line">date: &#123; &#123; date &#125; &#125;</span><br><span class="line">tags:</span><br><span class="line">  - null</span><br><span class="line">categories:</span><br><span class="line">  - null</span><br><span class="line">description: ..</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<div class="note warning"><p>yaml 只会识别 <code>{{ }}</code>
+，而不会识别<code>{ { } }</code>，因此初始化为 null。</p>
+</div>
+<p>解决方案是在开头添加<code># prettier-ignore</code>，表示不加入格式化。也可以新建<code>.prettierignore</code>文件排除
+scaffolds 文件夹，具体方案参考：<span class="exturl" data-url="aHR0cHM6Ly9wcmV0dGllci5pby9kb2NzL2VuL2lnbm9yZS5odG1s">https://prettier.io/docs/en/ignore.html<i class="fa fa-external-link-alt"></i></span></p>
+<p>改进后的 front-matter:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line"># prettier-ignore</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">  - null</span><br><span class="line">categories:</span><br><span class="line">  - null</span><br><span class="line">description: ..</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<div class="note warning"><p>就算是一般的文件，在写代码块时，如果标注代码为 YAML 类型，prettier
+也可能将代码块中的内容格式化，造成代码块无法复现，因此尽量标注代码为
+text。</p>
+</div>
+<p>新的问题来了，hexo 采用 Nunjucks 实现 md 渲染，然而 Nunjucks 遇到
+ `{{ }}` 会报错导致部署失败，因此需要改成：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125; `&#123;&#123; &#125;&#125;` &#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<p>无语死 😶</p>
 ]]></content>
+      <categories>
+        <category>运维</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>bugfix</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo语法</title>
+    <url>/2022/09/23/hexo%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="日常写博客的-bash-流程">日常写博客的 bash 流程</h2>
+<ol type="1">
+<li>创建博客
+<ul>
+<li>hexo new [layout] "file_name" // layout:
+post/draft/page/other_name</li>
+</ul></li>
+<li>推送博文
+<ul>
+<li>hexo clean: 清理/public 文件夹</li>
+<li>hexo g -d: 重新生成/public 文件夹并推送到
+GitHub，博客网站依靠/public 的内容对外展示</li>
+<li>hexo s: 本地启动服务器，用于本地测试</li>
+</ul></li>
+</ol>
+<h2 id="用于同步博客源码的一般-git-流程">用于同步博客源码的一般 git
+流程</h2>
+<ol type="1">
+<li><p>项目刚开始建立时</p>
+<ul>
+<li><code>git init</code>: 在本地文件夹创建仓库</li>
+<li><code>git clone &lt;repo&gt;</code>: 从 GitHub
+拷贝项目到本地，一般可以从 GitHub 直接 copy 命令过来</li>
+</ul></li>
+<li><p>项目更新代码时</p>
+<ul>
+<li><code>git checkout -b &lt;branch_name&gt; origin/&lt;remote_branch&gt;</code>:
+拉取远程某特定分支到本地，并新建分支，切换到该分支</li>
+<li><code>git fetch origin</code> +
+<code>git merge origin/v0.1.20220925</code>: 获取远程更新的数据并同步
+merge 到本地，效果等同于<code>git pull</code></li>
+<li><code>git commit .</code>: 提交新修改的文件到本地暂存</li>
+<li><code>git push origin v0.1.20220925</code>: 将本地暂存文件 push
+到远程仓库</li>
+</ul></li>
+<li><p>一些 git info 的查看命令</p>
+<ul>
+<li><code>git config --list</code>: 查看 git 配置信息。</li>
+<li><code>git status</code>: 查看仓库当前状态，显示有变更的文件</li>
+<li><code>git log</code>: 查看历史提交信息</li>
+<li><code>git blame &lt;file&gt;</code>: 查看某个文件的历史修改信息</li>
+<li><code>git diff</code>: 比较暂存区文件和工作区文件的不同</li>
+</ul></li>
+</ol>
+<h2 id="实用的-hexo-md-渲染组件">实用的 hexo md 渲染组件</h2>
+<h3 id="首页文章预览">首页文章预览</h3>
+<p>在文章中需要截断的地方插入以下代码即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+<p>不过我用的是 hexo
+的配置文件中：<code>excerpt_description: true</code>，使得首页展示的是博客的
+description。</p>
+<h3 id="提示小插件">提示小插件</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;default&#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125;primary&#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125;success&#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125;info&#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125;warning&#123;% endnote %&#125;</span><br><span class="line">&#123;% note danger %&#125;danger&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default"><p>default</p>
+</div>
+<div class="note primary"><p>primary</p>
+</div>
+<div class="note success"><p>success</p>
+</div>
+<div class="note info"><p>info</p>
+</div>
+<div class="note warning"><p>warning</p>
+</div>
+<div class="note danger"><p>danger</p>
+</div>
+<h3 id="图片">图片</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. &#123;% img [class names] /path/to/image [width] [height] &#x27;&quot;title text&quot; &quot;alt text&quot;&#x27; %&#125;</span><br><span class="line">2. !()[]</span><br></pre></td></tr></table></figure>
+<img src="/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE102742.jpg" class="[class names]">
+<p>安装以下插件解决图片路径问题，需要建立文件夹：<code>source\images</code><br />
+<code>npm i hexo-easy-images -s</code></p>
+<h3 id="代码块流程">代码块流程</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs adding-tags-page %&#125;</span><br><span class="line"> &lt;!-- tab 新建页面 → --&gt;</span><br><span class="line"> ``` hexo new page tags```</span><br><span class="line"> &lt;!-- endtab --&gt;</span><br><span class="line"> &lt;!-- tab 添加属性 --&gt;</span><br><span class="line"> 在`tags/index.md`的front-matter中添加：</span><br><span class="line"> ``` type: tags  ```</span><br><span class="line"> &lt;!-- endtab --&gt;</span><br><span class="line"> &#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success"><p>实现效果： <img src="/images/屏幕截图102742.jpg"
+alt="代码块流程图" /></p>
+</div>
+<hr />
+<h2 id="md-语法测试">md 语法测试</h2>
+<p><span class="math display">\[e^2\]</span></p>
+<p><span class="math display">\[
+\begin{equation} \label{eq1}
+e = m c ^ 2
+\end{equation}
+\]</span></p>
+<p>The famous matter-energy equation <span
+class="math inline">\(\eqref{eq1}\)</span> proposed by Einstein...</p>
+<p><span class="math display">\[
+\begin{equation} \label{eq2}
+\begin{aligned}
+a &amp;= b + c\\
+  &amp;= d + e + f \\
+  &amp;= h + i
+\end{aligned}
+\end{equation}
+\]</span></p>
+<p>Equation <span class="math inline">\(\eqref{eq2}\)</span> is a
+multi-line equation.</p>
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>hexo</category>
+      </categories>
   </entry>
   <entry>
     <title>Next主题在hexo的应用</title>
@@ -413,108 +561,5 @@ front-matter 中加入<code>type: categories</code></p>
         <tag>next</tag>
         <tag>hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hexo语法</title>
-    <url>/2022/09/23/hexo%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="日常写博客的-bash-流程">日常写博客的 bash 流程</h2>
-<ol type="1">
-<li>创建博客
-<ul>
-<li>hexo new [layout] "file_name" // layout:
-post/draft/page/other_name</li>
-</ul></li>
-<li>推送博文
-<ul>
-<li>hexo clean: 清理/public 文件夹</li>
-<li>hexo g -d: 重新生成/public 文件夹并推送到
-GitHub，博客网站依靠/public 的内容对外展示</li>
-<li>hexo s: 本地启动服务器，用于本地测试</li>
-</ul></li>
-</ol>
-<h2 id="用于同步博客源码的一般-git-流程">用于同步博客源码的一般 git
-流程</h2>
-<ol type="1">
-<li><p>项目刚开始建立时</p>
-<ul>
-<li><code>git init</code>: 在本地文件夹创建仓库</li>
-<li><code>git clone &lt;repo&gt;</code>: 从 GitHub
-拷贝项目到本地，一般可以从 GitHub 直接 copy 命令过来</li>
-</ul></li>
-<li><p>项目更新代码时</p>
-<ul>
-<li><code>git checkout -b &lt;branch_name&gt; origin/&lt;remote_branch&gt;</code>:
-拉取远程某特定分支到本地，并新建分支，切换到该分支</li>
-<li><code>git fetch origin</code> +
-<code>git merge origin/v0.1.20220925</code>: 获取远程更新的数据并同步
-merge 到本地，效果等同于<code>git pull</code></li>
-<li><code>git commit .</code>: 提交新修改的文件到本地暂存</li>
-<li><code>git push origin v0.1.20220925</code>: 将本地暂存文件 push
-到远程仓库</li>
-</ul></li>
-<li><p>一些 git info 的查看命令</p>
-<ul>
-<li><code>git config --list</code>: 查看 git 配置信息。</li>
-<li><code>git status</code>: 查看仓库当前状态，显示有变更的文件</li>
-<li><code>git log</code>: 查看历史提交信息</li>
-<li><code>git blame &lt;file&gt;</code>: 查看某个文件的历史修改信息</li>
-<li><code>git diff</code>: 比较暂存区文件和工作区文件的不同</li>
-</ul></li>
-</ol>
-<h2 id="实用的-hexo-md-渲染组件">实用的 hexo md 渲染组件</h2>
-<h3 id="首页文章预览">首页文章预览</h3>
-<p>在文章中需要截断的地方插入以下代码即可：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h3 id="提示小插件">提示小插件</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;default&#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125;primary&#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125;success&#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125;info&#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125;warning&#123;% endnote %&#125;</span><br><span class="line">&#123;% note danger %&#125;danger&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note default"><p>default</p>
-</div>
-<div class="note primary"><p>primary</p>
-</div>
-<div class="note success"><p>success</p>
-</div>
-<div class="note info"><p>info</p>
-</div>
-<div class="note warning"><p>warning</p>
-</div>
-<div class="note danger"><p>danger</p>
-</div>
-<h3 id="图片">图片</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. &#123;% img [class names] /path/to/image [width] [height] &#x27;&quot;title text&quot; &quot;alt text&quot;&#x27; %&#125;</span><br><span class="line">2. !()[]</span><br></pre></td></tr></table></figure>
-<img src="/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE102742.jpg" class="[class names]">
-<p>安装以下插件解决图片路径问题，需要建立文件夹：<code>source\images</code><br />
-<code>npm i hexo-easy-images -s</code></p>
-<h3 id="代码块流程">代码块流程</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs adding-tags-page %&#125;</span><br><span class="line"> &lt;!-- tab 新建页面 → --&gt;</span><br><span class="line"> ``` hexo new page tags```</span><br><span class="line"> &lt;!-- endtab --&gt;</span><br><span class="line"> &lt;!-- tab 添加属性 --&gt;</span><br><span class="line"> 在`tags/index.md`的front-matter中添加：</span><br><span class="line"> ``` type: tags  ```</span><br><span class="line"> &lt;!-- endtab --&gt;</span><br><span class="line"> &#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note success"><p>实现效果： <img src="/images/屏幕截图102742.jpg"
-alt="代码块流程图" /></p>
-</div>
-<hr />
-<h2 id="md-语法测试">md 语法测试</h2>
-<p><span class="math display">\[e^2\]</span></p>
-<p><span class="math display">\[
-\begin{equation} \label{eq1}
-e = m c ^ 2
-\end{equation}
-\]</span></p>
-<p>The famous matter-energy equation <span
-class="math inline">\(\eqref{eq1}\)</span> proposed by Einstein...</p>
-<p><span class="math display">\[
-\begin{equation} \label{eq2}
-\begin{aligned}
-a &amp;= b + c\\
-  &amp;= d + e + f \\
-  &amp;= h + i
-\end{aligned}
-\end{equation}
-\]</span></p>
-<p>Equation <span class="math inline">\(\eqref{eq2}\)</span> is a
-multi-line equation.</p>
-]]></content>
-      <categories>
-        <category>运维</category>
-        <category>hexo</category>
-      </categories>
   </entry>
 </search>

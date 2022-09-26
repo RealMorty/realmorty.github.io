@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://www.realmorty.top/2022/09/26/hexo-bugfix/</loc>
+    
+    <lastmod>2022-09-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.realmorty.top/2022/09/22/hello-world/</loc>
     
     <lastmod>2022-09-26</lastmod>
@@ -73,6 +82,13 @@
   
   <url>
     <loc>https://www.realmorty.top/tags/%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2022-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.realmorty.top/tags/bugfix/</loc>
     <lastmod>2022-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
