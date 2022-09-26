@@ -1,6 +1,7 @@
 ---
-title: { { title } }
-date: { { date } }
+# prettier-ignore
+title: {{ title }}
+date: {{ date }}
 tags:
   - null
 categories:

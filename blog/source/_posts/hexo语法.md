@@ -11,8 +11,7 @@ description: hexo语法总结，主要是一些小插件和流程块的使用。
 ## 日常写博客的 bash 流程
 
 1. 创建博客
-   - hexo new post "file_name"
-   -
+   - hexo new [layout] "file_name" // layout: post/draft/page/other_name
 2. 推送博文
    - hexo clean: 清理/public 文件夹
    - hexo g -d: 重新生成/public 文件夹并推送到 GitHub，博客网站依靠/public 的内容对外展示
@@ -49,7 +48,7 @@ description: hexo语法总结，主要是一些小插件和流程块的使用。
 <!-- more -->
 ```
 
-<!-- more -->
+不过我用的是 hexo 的配置文件中：`excerpt_description: true`，使得首页展示的是博客的 description。
 
 ### 提示小插件
 
