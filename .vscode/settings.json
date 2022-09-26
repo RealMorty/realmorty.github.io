@@ -1,0 +1,14 @@
+{
+    "svg.preview.background": "transparent",
+
+
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
+    },
+    
+}
