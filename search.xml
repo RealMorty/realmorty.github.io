@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>hexo语法</title>
+    <url>/2022/09/23/hexo%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="实用的hexo-md渲染组件">实用的hexo md渲染组件</h2>
+<h3 id="提示小插件">提示小插件</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;default&#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125;primary&#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125;success&#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125;info&#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125;warning&#123;% endnote %&#125;</span><br><span class="line">&#123;% note danger %&#125;danger&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default"><p>default</p>
+</div>
+<div class="note primary"><p>primary</p>
+</div>
+<div class="note success"><p>success</p>
+</div>
+<div class="note info"><p>info</p>
+</div>
+<div class="note warning"><p>warning</p>
+</div>
+<div class="note danger"><p>danger</p>
+</div>
+<h3 id="图片">图片</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. &#123;% img [class names] /path/to/image [width] [height] &#x27;&quot;title text&quot; &quot;alt text&quot;&#x27; %&#125;</span><br><span class="line">2. !()[]</span><br></pre></td></tr></table></figure>
+<img src="/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE102742.jpg" class="[class names]">
+<p>安装以下插件解决图片路径问题，需要建立文件夹：<code>source\images</code><br />
+<code>npm i hexo-easy-images -s</code></p>
+<h3 id="代码块流程">代码块流程</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs adding-tags-page %&#125;</span><br><span class="line"> &lt;!-- tab 新建页面 → --&gt;</span><br><span class="line"> ``` hexo new page tags```</span><br><span class="line"> &lt;!-- endtab --&gt;</span><br><span class="line"> &lt;!-- tab 添加属性 --&gt;</span><br><span class="line"> 在`tags/index.md`的front-matter中添加：</span><br><span class="line"> ``` type: tags  ```</span><br><span class="line"> &lt;!-- endtab --&gt;</span><br><span class="line"> &#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success"><p>实现效果： <img src="/images/屏幕截图102742.jpg"
+alt="代码块流程图" /></p>
+</div>
+<hr />
+<h2 id="md语法测试">md语法测试</h2>
+<p><span class="math display">\[e^2\]</span></p>
+<p><span class="math display">\[
+\begin{equation} \label{eq1}
+e = m c ^ 2
+\end{equation}
+\]</span><br />
+The famous matter-energy equation <span
+class="math inline">\(\eqref{eq1}\)</span> proposed by Einstein...</p>
+<p><span class="math display">\[
+\begin{equation} \label{eq2}
+\begin{aligned}
+a &amp;= b + c\\
+  &amp;= d + e + f \\
+  &amp;= h + i
+\end{aligned}
+\end{equation}
+\]</span> Equation <span class="math inline">\(\eqref{eq2}\)</span> is a
+multi-line equation.</p>
+]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/09/22/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very
+first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for
+more info. If you get any problems when using Hexo, you can find the
+answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or
+you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>java语法</title>
+    <url>/2022/09/23/java%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="一些容易忽视的java语法">一些容易忽视的Java语法</h2>
+<pre class="mermaid">
+
+graph TD
+A[Christmas] --&gt;|Get money| B(Go shopping)
+B --&gt; C{Let me think}
+C --&gt;|One| D[Laptop]
+C --&gt;|Two| E[iPhone]
+C --&gt;|Three| F[fa:fa-car Car]
+</pre>
+]]></content>
+      <categories>
+        <category>后端</category>
+        <category>语法库</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>next主题在hexo的应用</title>
+    <url>/2022/09/23/next%E4%B8%BB%E9%A2%98%E5%9C%A8hexo%E7%9A%84%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="next主题插件">Next主题插件</h2>
+<h3 id="mermaid">Mermaid</h3>
+<p><span class="exturl" data-url="aHR0cHM6Ly9tZXJtYWlkLWpzLmdpdGh1Yi5pby9tZXJtYWlkLWxpdmUtZWRpdG9yLw==">Mermaid在线生成网站<i class="fa fa-external-link-alt"></i></span></p>
+<pre class="mermaid">
+
+graph TD
+A[Christmas] --&gt;|Get money| B(Go shopping)
+B --&gt; C{Let me think}
+C --&gt;|One| D[Laptop]
+C --&gt;|Two| E[iPhone]
+C --&gt;|Three| F[fa:fa-car Car]
+</pre>
+<h3 id="pdf">PDF</h3>
+<div class="pdf-container" data-target="https://www.orimi.com/pdf-test.pdf" data-height="500px"></div>
+<hr />
+<h3 id="群组图片">群组图片</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% grouppicture [number]-[layout] %&#125;</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure>
+<p>或者 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% gp [number]-[layout] %&#125;</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><code>[number]</code>: 图片总数</li>
+<li><code>[layout]</code>: 布局</li>
+</ul>
+<p>例子： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% grouppicture 3-3 %&#125;</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure> <div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/next.svg" /></div><div class="group-picture-column"><img src="/images/next.svg" /></div><div class="group-picture-column"><img
+src="/images/next.svg" /></div></div></div></p>
+<h3 id="按钮">按钮</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% button url, text, icon [class], [title] %&#125;</span><br></pre></td></tr></table></figure>
+<p>或者<br />
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% btn url, text, icon [class], [title] %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>示例:</p>
+单链接：<br />
+<figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;text-center&quot;</span>&gt;</span></span><span class="template-tag">&#123;% <span class="name">btn</span> https://github.com, GitHub, fab fa-github fa-fw fa-lg, GitHub %&#125;</span><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<div class="text-center">
+<a class="btn" href="https://github.com" title="GitHub"><i class="fab fa-github fa-fw fa-lg"></i>GitHub</a>
+</div>
+前后链接：<br />
+<figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;text-center&quot;</span>&gt;</span></span><span class="template-tag">&#123;% <span class="name">btn</span> #, Previous Chapter, arrow-left fa-fw fa-lg, Previous Chapter (Full Image) %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name">btn</span> #, Next Chapter, arrow-right fa-fw fa-lg, Next Chapter (Label) %&#125;</span><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<div class="text-center">
+<a class="btn" href="/docs/tag-plugins/full-image" title="Previous Chapter (Full Image)"><i class="fa fa-arrow-left fa-fw fa-lg"></i>Previous Chapter</a>
+<a class="btn" href="/docs/tag-plugins/label" title="Next Chapter (Label)"><i class="fa fa-arrow-right fa-fw fa-lg"></i>Next Chapter</a>
+</div>
+<p>其他按钮：</p>
+<p><a class="btn" href="#"><i class="fab fa-edge"></i></a> <code>&#123;% btn #,, fab fa-edge %&#125;</code></p>
+<p><a class="btn" href="#"><i class="fa fa-times"></i></a> <code>&#123;% btn #,, times %&#125;</code></p>
+<p><a class="btn" href="#"><i class="fa fa-circle-notch"></i></a> <code>&#123;% btn #,, circle-notch %&#125;</code></p>
+<p><a class="btn" href="#"><i class="fa fa-italic"></i></a> <code>&#123;% btn #,, italic %&#125;</code></p>
+<p><a class="btn" href="#"><i class="fab fa-scribd"></i></a> <code>&#123;% btn #,, fab fa-scribd %&#125;</code></p>
+<p><a class="btn" href="#"><i class="fab fa-google"></i></a> <code>&#123;% btn #,, fab fa-google %&#125;</code></p>
+<p><a class="btn" href="#"><i class="fab fa-chrome"></i></a> <code>&#123;% btn #,, fab fa-chrome %&#125;</code></p>
+<p><a class="btn" href="#"><i class="fab fa-opera"></i></a> <code>&#123;% btn #,, fab fa-opera %&#125;</code></p>
+<p><a class="btn" href="#"><i class="fab fa-opera"></i></a> <code>&#123;% btn #,, gem fa-rotate-270 %&#125;</code></p>
+<h2 id="添加评论功能">添加评论功能</h2>
+<p>依次尝试了next默认提供的几个评论插件：</p>
+<ul>
+<li>disqus: 国内被墙，不然做的最好的一个，next官方采用本方案</li>
+<li>changyan: 追评UI个人觉得不够简洁</li>
+<li>livere: UI不习惯</li>
+<li>gitalk: 国内网络环境不好，Network Error</li>
+<li>utterances: 很棒，缺点是不能追评</li>
+</ul>
+<p>暂时先用着utterances。</p>
+<p>这里要吐槽一下gitalk，如果你和我一样域名类似于<code>realmorty.top</code>，那么在创建GitHub
+Application时<code>Authorization callback URL</code>
+一定要是<code>https://realmorty.top</code>，其他的比如<code>https://www.realmorty.top</code>会报错：回调网址与GitHub默认网址不符。另外Homepage
+URL 和Authorization callback URL我写的是一样的。</p>
+<h2 id="添加新的文件夹page">添加新的文件夹（page）</h2>
+<p>初始化的hexo没有categories功能，需要新建该分类。<br />
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+新建之后会自动生成<code>\source\categories\index.md</code>，在front-matter中加入<code>type: categories</code><br />
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2022-09-23 09:38:47</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+后续添加新文章时，在front-matter中添加categories属性，即可收纳到该分类下。
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">    - folder</span><br><span class="line">    - folder&#x27;s child</span><br><span class="line">    - folder&#x27;s child&#x27;s child</span><br><span class="line">    - ...</span><br></pre></td></tr></table></figure> 例如这篇文章的front-matter： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: next主题在hexo的应用</span><br><span class="line">date: 2022-09-23 09:45:47</span><br><span class="line">tags: </span><br><span class="line">    - next</span><br><span class="line">    - hexo</span><br><span class="line">categories:</span><br><span class="line">    - 运维</span><br><span class="line">    - hexo</span><br></pre></td></tr></table></figure>
+tags功能同理：</p>
+<div class="tabs" id="adding-tags-page"><ul class="nav-tabs"><li class="tab active"><a href="#adding-tags-page-1">新建页面 →</a></li><li class="tab"><a href="#adding-tags-page-2">添加属性 →</a></li><li class="tab"><a href="#adding-tags-page-3">文章中添加标签</a></li></ul><div class="tab-content"><div class="tab-pane active" id="adding-tags-page-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="adding-tags-page-2"><p>在<code>tags/index.md</code>的front-matter中添加：<br />
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">type: tags   </span><br></pre></td></tr></table></figure></p></div><div class="tab-pane" id="adding-tags-page-3"><p>在新建文章的front-matter中添加： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tags:</span><br><span class="line">- tag1</span><br><span class="line">- tag2</span><br></pre></td></tr></table></figure> 或者
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tags: [tag1, tag2]</span><br></pre></td></tr></table></figure></p></div></div></div>
+]]></content>
+      <categories>
+        <category>运维</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>next</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>
