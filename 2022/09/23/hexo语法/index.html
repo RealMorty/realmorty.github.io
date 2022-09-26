@@ -21,17 +21,17 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.realmorty.top","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="实用的hexo md渲染组件 提示小插件 123456&amp;#123;% note default %&amp;#125;default&amp;#123;% endnote %&amp;#125;&amp;#123;% note primary %&amp;#125;primary&amp;#123;% endnote %&amp;#125;&amp;#123;% note success %&amp;#125;success&amp;#123;% endnote %&amp;#1">
+    <meta name="description" content="hexo语法总结，主要是一些小插件和流程块的使用。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo语法">
 <meta property="og:url" content="https://www.realmorty.top/2022/09/23/hexo%E8%AF%AD%E6%B3%95/">
 <meta property="og:site_name" content="B - L - O - G">
-<meta property="og:description" content="实用的hexo md渲染组件 提示小插件 123456&amp;#123;% note default %&amp;#125;default&amp;#123;% endnote %&amp;#125;&amp;#123;% note primary %&amp;#125;primary&amp;#123;% endnote %&amp;#125;&amp;#123;% note success %&amp;#125;success&amp;#123;% endnote %&amp;#1">
+<meta property="og:description" content="hexo语法总结，主要是一些小插件和流程块的使用。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.realmorty.top/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE102742.jpg">
 <meta property="og:image" content="https://www.realmorty.top/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE102742.jpg">
 <meta property="article:published_time" content="2022-09-23T02:38:05.000Z">
-<meta property="article:modified_time" content="2022-09-26T03:08:30.299Z">
+<meta property="article:modified_time" content="2022-09-26T08:31:54.771Z">
 <meta property="article:author" content="Morty">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.realmorty.top/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE102742.jpg">
@@ -55,7 +55,11 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-</head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -148,7 +152,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%94%A8%E7%9A%84hexo-md%E6%B8%B2%E6%9F%93%E7%BB%84%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">实用的hexo md渲染组件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA%E5%B0%8F%E6%8F%92%E4%BB%B6"><span class="nav-number">1.1.</span> <span class="nav-text">提示小插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87"><span class="nav-number">1.2.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97%E6%B5%81%E7%A8%8B"><span class="nav-number">1.3.</span> <span class="nav-text">代码块流程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#md%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95"><span class="nav-number">2.</span> <span class="nav-text">md语法测试</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%94%A8%E7%9A%84-hexo-md-%E6%B8%B2%E6%9F%93%E7%BB%84%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">实用的 hexo md 渲染组件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E9%A2%84%E8%A7%88"><span class="nav-number">1.1.</span> <span class="nav-text">首页文章预览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA%E5%B0%8F%E6%8F%92%E4%BB%B6"><span class="nav-number">1.2.</span> <span class="nav-text">提示小插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87"><span class="nav-number">1.3.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97%E6%B5%81%E7%A8%8B"><span class="nav-number">1.4.</span> <span class="nav-text">代码块流程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#md-%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95"><span class="nav-number">2.</span> <span class="nav-text">md 语法测试</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -169,7 +173,7 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -243,7 +247,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="hexo语法 | B - L - O - G">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="hexo语法总结，主要是一些小插件和流程块的使用。">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -267,6 +271,10 @@
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E8%BF%90%E7%BB%B4/" itemprop="url" rel="index"><span itemprop="name">运维</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%BF%90%E7%BB%B4/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
         </span>
     </span>
 
@@ -295,6 +303,7 @@
     </span>
 </div>
 
+            <div class="post-description">hexo语法总结，主要是一些小插件和流程块的使用。</div>
         </div>
       </header>
 
@@ -302,7 +311,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="实用的hexo-md渲染组件">实用的hexo md渲染组件</h2>
+        <h2 id="实用的-hexo-md-渲染组件">实用的 hexo md 渲染组件</h2>
+<h3 id="首页文章预览">首页文章预览</h3>
+<p>在文章中需要截断的地方插入以下代码即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
 <h3 id="提示小插件">提示小插件</h3>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default %&#125;default&#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125;primary&#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125;success&#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125;info&#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125;warning&#123;% endnote %&#125;</span><br><span class="line">&#123;% note danger %&#125;danger&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 <div class="note default"><p>default</p>
@@ -328,14 +341,14 @@
 alt="代码块流程图" /></p>
 </div>
 <hr />
-<h2 id="md语法测试">md语法测试</h2>
+<h2 id="md-语法测试">md 语法测试</h2>
 <p><span class="math display">\[e^2\]</span></p>
 <p><span class="math display">\[
 \begin{equation} \label{eq1}
 e = m c ^ 2
 \end{equation}
-\]</span><br />
-The famous matter-energy equation <span
+\]</span></p>
+<p>The famous matter-energy equation <span
 class="math inline">\(\eqref{eq1}\)</span> proposed by Einstein...</p>
 <p><span class="math display">\[
 \begin{equation} \label{eq2}
@@ -345,7 +358,8 @@ a &amp;= b + c\\
   &amp;= h + i
 \end{aligned}
 \end{equation}
-\]</span> Equation <span class="math inline">\(\eqref{eq2}\)</span> is a
+\]</span></p>
+<p>Equation <span class="math inline">\(\eqref{eq2}\)</span> is a
 multi-line equation.</p>
 
     </div>
@@ -415,13 +429,13 @@ multi-line equation.</p>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">4k</span>
+    <span title="站点总字数">6k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">5 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

@@ -21,17 +21,17 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.realmorty.top","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Next主题插件 Mermaid Mermaid在线生成网站   graph TD A[Christmas] --&gt;|Get money| B(Go shopping) B --&gt; C{Let me think} C --&gt;|One| D[Laptop] C --&gt;|Two| E[iPhone] C --&gt;|Three| F[fa:fa-car Car]  P">
+    <meta name="description" content="next主题在hexo的部署与初步改造。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="next主题在hexo的应用">
 <meta property="og:url" content="https://www.realmorty.top/2022/09/23/next%E4%B8%BB%E9%A2%98%E5%9C%A8hexo%E7%9A%84%E5%BA%94%E7%94%A8/">
 <meta property="og:site_name" content="B - L - O - G">
-<meta property="og:description" content="Next主题插件 Mermaid Mermaid在线生成网站   graph TD A[Christmas] --&gt;|Get money| B(Go shopping) B --&gt; C{Let me think} C --&gt;|One| D[Laptop] C --&gt;|Two| E[iPhone] C --&gt;|Three| F[fa:fa-car Car]  P">
+<meta property="og:description" content="next主题在hexo的部署与初步改造。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.realmorty.top/images/next.svg">
 <meta property="og:image" content="https://www.realmorty.top/images/next.svg">
 <meta property="article:published_time" content="2022-09-23T01:45:47.000Z">
-<meta property="article:modified_time" content="2022-09-26T04:33:06.341Z">
+<meta property="article:modified_time" content="2022-09-26T08:13:34.999Z">
 <meta property="article:author" content="Morty">
 <meta property="article:tag" content="next">
 <meta property="article:tag" content="hexo">
@@ -57,7 +57,11 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-</head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -150,7 +154,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#next%E4%B8%BB%E9%A2%98%E6%8F%92%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">Next主题插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#mermaid"><span class="nav-number">1.1.</span> <span class="nav-text">Mermaid</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pdf"><span class="nav-number">1.2.</span> <span class="nav-text">PDF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BE%A4%E7%BB%84%E5%9B%BE%E7%89%87"><span class="nav-number">1.3.</span> <span class="nav-text">群组图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E9%92%AE"><span class="nav-number">1.4.</span> <span class="nav-text">按钮</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD"><span class="nav-number">2.</span> <span class="nav-text">添加评论功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9page"><span class="nav-number">3.</span> <span class="nav-text">添加新的文件夹（page）</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#next-%E4%B8%BB%E9%A2%98%E6%8F%92%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">Next 主题插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#mermaid"><span class="nav-number">1.1.</span> <span class="nav-text">Mermaid</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pdf"><span class="nav-number">1.2.</span> <span class="nav-text">PDF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BE%A4%E7%BB%84%E5%9B%BE%E7%89%87"><span class="nav-number">1.3.</span> <span class="nav-text">群组图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E9%92%AE"><span class="nav-number">1.4.</span> <span class="nav-text">按钮</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD"><span class="nav-number">2.</span> <span class="nav-text">添加评论功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9page"><span class="nav-number">3.</span> <span class="nav-text">添加新的文件夹（page）</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -171,7 +175,7 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -245,7 +249,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="next主题在hexo的应用 | B - L - O - G">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="next主题在hexo的部署与初步改造。">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -301,6 +305,7 @@
     </span>
 </div>
 
+            <div class="post-description">next主题在hexo的部署与初步改造。</div>
         </div>
       </header>
 
@@ -308,9 +313,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="next主题插件">Next主题插件</h2>
+        <h2 id="next-主题插件">Next 主题插件</h2>
 <h3 id="mermaid">Mermaid</h3>
-<p><span class="exturl" data-url="aHR0cHM6Ly9tZXJtYWlkLWpzLmdpdGh1Yi5pby9tZXJtYWlkLWxpdmUtZWRpdG9yLw==">Mermaid在线生成网站<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9tZXJtYWlkLWpzLmdpdGh1Yi5pby9tZXJtYWlkLWxpdmUtZWRpdG9yLw==">Mermaid
+在线生成网站<i class="fa fa-external-link-alt"></i></span></p>
 <pre class="mermaid">
 
 graph TD
@@ -325,64 +331,84 @@ C --&gt;|Three| F[fa:fa-car Car]
 <hr />
 <h3 id="群组图片">群组图片</h3>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% grouppicture [number]-[layout] %&#125;</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure>
-<p>或者 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gp [number]-[layout] %&#125;</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>或者</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gp [number]-[layout] %&#125;</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
 <ul>
 <li><code>[number]</code>: 图片总数</li>
 <li><code>[layout]</code>: 布局</li>
 </ul>
-<p>例子： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% grouppicture 3-3 %&#125;</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure> <div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/next.svg" /></div><div class="group-picture-column"><img src="/images/next.svg" /></div><div class="group-picture-column"><img
-src="/images/next.svg" /></div></div></div></p>
+<p>例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% grouppicture 3-3 %&#125;</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/next.svg" /></div><div class="group-picture-column"><img src="/images/next.svg" /></div><div class="group-picture-column"><img
+src="/images/next.svg" /></div></div></div>
 <h3 id="按钮">按钮</h3>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% button url, text, icon [class], [title] %&#125;</span><br></pre></td></tr></table></figure>
-<p>或者<br />
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% btn url, text, icon [class], [title] %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>或者</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% btn url, text, icon [class], [title] %&#125;</span><br></pre></td></tr></table></figure>
 <p>示例:</p>
-单链接：<br />
+<p>单链接：</p>
 <figure class="highlight jinja"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;text-center&quot;</span>&gt;</span></span><span class="template-tag">&#123;% <span class="name">btn</span> https://github.com, GitHub, fab fa-github fa-fw fa-lg, GitHub %&#125;</span><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <div class="text-center">
 <a class="btn" target="_blank" rel="noopener" href="https://github.com" title="GitHub"><i class="fab fa-github fa-fw fa-lg"></i>GitHub</a>
 </div>
-前后链接：<br />
+<p>前后链接：</p>
 <figure class="highlight jinja"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;text-center&quot;</span>&gt;</span></span><span class="template-tag">&#123;% <span class="name">btn</span> #, Previous Chapter, arrow-left fa-fw fa-lg, Previous Chapter (Full Image) %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name">btn</span> #, Next Chapter, arrow-right fa-fw fa-lg, Next Chapter (Label) %&#125;</span><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <div class="text-center">
 <a class="btn" href="/docs/tag-plugins/full-image" title="Previous Chapter (Full Image)"><i class="fa fa-arrow-left fa-fw fa-lg"></i>Previous Chapter</a>
 <a class="btn" href="/docs/tag-plugins/label" title="Next Chapter (Label)"><i class="fa fa-arrow-right fa-fw fa-lg"></i>Next Chapter</a>
 </div>
 <p>其他按钮：</p>
-<p><a class="btn" href="#"><i class="fab fa-edge"></i></a> <code>&#123;% btn #,, fab fa-edge %&#125;</code></p>
-<p><a class="btn" href="#"><i class="fa fa-times"></i></a> <code>&#123;% btn #,, times %&#125;</code></p>
-<p><a class="btn" href="#"><i class="fa fa-circle-notch"></i></a> <code>&#123;% btn #,, circle-notch %&#125;</code></p>
-<p><a class="btn" href="#"><i class="fa fa-italic"></i></a> <code>&#123;% btn #,, italic %&#125;</code></p>
-<p><a class="btn" href="#"><i class="fab fa-scribd"></i></a> <code>&#123;% btn #,, fab fa-scribd %&#125;</code></p>
-<p><a class="btn" href="#"><i class="fab fa-google"></i></a> <code>&#123;% btn #,, fab fa-google %&#125;</code></p>
-<p><a class="btn" href="#"><i class="fab fa-chrome"></i></a> <code>&#123;% btn #,, fab fa-chrome %&#125;</code></p>
-<p><a class="btn" href="#"><i class="fab fa-opera"></i></a> <code>&#123;% btn #,, fab fa-opera %&#125;</code></p>
-<p><a class="btn" href="#"><i class="fab fa-opera"></i></a> <code>&#123;% btn #,, gem fa-rotate-270 %&#125;</code></p>
+<a class="btn" href="#"><i class="fab fa-edge"></i></a>
+<p><code>&#123;% btn #,, fab fa-edge %&#125;</code></p>
+<a class="btn" href="#"><i class="fa fa-times"></i></a>
+<p><code>&#123;% btn #,, times %&#125;</code></p>
+<a class="btn" href="#"><i class="fa fa-circle-notch"></i></a>
+<p><code>&#123;% btn #,, circle-notch %&#125;</code></p>
+<a class="btn" href="#"><i class="fa fa-italic"></i></a>
+<p><code>&#123;% btn #,, italic %&#125;</code></p>
+<a class="btn" href="#"><i class="fab fa-scribd"></i></a>
+<p><code>&#123;% btn #,, fab fa-scribd %&#125;</code></p>
+<a class="btn" href="#"><i class="fab fa-google"></i></a>
+<p><code>&#123;% btn #,, fab fa-google %&#125;</code></p>
+<a class="btn" href="#"><i class="fab fa-chrome"></i></a>
+<p><code>&#123;% btn #,, fab fa-chrome %&#125;</code></p>
+<a class="btn" href="#"><i class="fab fa-opera"></i></a>
+<p><code>&#123;% btn #,, fab fa-opera %&#125;</code></p>
+<a class="btn" href="#"><i class="fab fa-opera"></i></a>
+<p><code>&#123;% btn #,, gem fa-rotate-270 %&#125;</code></p>
 <h2 id="添加评论功能">添加评论功能</h2>
-<p>依次尝试了next默认提供的几个评论插件：</p>
+<p>依次尝试了 next 默认提供的几个评论插件：</p>
 <ul>
-<li>disqus: 国内被墙，不然做的最好的一个，next官方采用本方案</li>
-<li>changyan: 追评UI个人觉得不够简洁</li>
-<li>livere: UI不习惯</li>
+<li>disqus: 国内被墙，不然做的最好的一个，next 官方采用本方案</li>
+<li>changyan: 追评 UI 个人觉得不够简洁</li>
+<li>livere: UI 不习惯</li>
 <li>gitalk: 国内网络环境不好，Network Error</li>
 <li>utterances: 很棒，缺点是不能追评</li>
 </ul>
-<p>暂时先用着utterances。</p>
-<p>这里要吐槽一下gitalk，如果你和我一样域名类似于<code>realmorty.top</code>，那么在创建GitHub
-Application时<code>Authorization callback URL</code>
-一定要是<code>https://realmorty.top</code>，其他的比如<code>https://www.realmorty.top</code>会报错：回调网址与GitHub默认网址不符。另外Homepage
-URL 和Authorization callback URL我写的是一样的。</p>
+<p>暂时先用着 utterances。</p>
+<p>这里要吐槽一下
+gitalk，如果你和我一样域名类似于<code>realmorty.top</code>，那么在创建
+GitHub Application 时<code>Authorization callback URL</code>
+一定要是<code>https://realmorty.top</code>，其他的比如<code>https://www.realmorty.top</code>会报错：回调网址与
+GitHub 默认网址不符。另外 Homepage URL 和 Authorization callback URL
+我写的是一样的。</p>
 <h2 id="添加新的文件夹page">添加新的文件夹（page）</h2>
-<p>初始化的hexo没有categories功能，需要新建该分类。<br />
+<p>初始化的 hexo 没有 categories 功能，需要新建该分类。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-新建之后会自动生成<code>\source\categories\index.md</code>，在front-matter中加入<code>type: categories</code><br />
+<p>新建之后会自动生成<code>\source\categories\index.md</code>，在
+front-matter 中加入<code>type: categories</code></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2022-09-23 09:38:47</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-后续添加新文章时，在front-matter中添加categories属性，即可收纳到该分类下。
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">    - folder</span><br><span class="line">    - folder&#x27;s child</span><br><span class="line">    - folder&#x27;s child&#x27;s child</span><br><span class="line">    - ...</span><br></pre></td></tr></table></figure> 例如这篇文章的front-matter： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title: next主题在hexo的应用</span><br><span class="line">date: 2022-09-23 09:45:47</span><br><span class="line">tags: </span><br><span class="line">    - next</span><br><span class="line">    - hexo</span><br><span class="line">categories:</span><br><span class="line">    - 运维</span><br><span class="line">    - hexo</span><br></pre></td></tr></table></figure>
-tags功能同理：</p>
-<div class="tabs" id="adding-tags-page"><ul class="nav-tabs"><li class="tab active"><a href="#adding-tags-page-1">新建页面 →</a></li><li class="tab"><a href="#adding-tags-page-2">添加属性 →</a></li><li class="tab"><a href="#adding-tags-page-3">文章中添加标签</a></li></ul><div class="tab-content"><div class="tab-pane active" id="adding-tags-page-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="adding-tags-page-2"><p>在<code>tags/index.md</code>的front-matter中添加：<br />
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type: tags   </span><br></pre></td></tr></table></figure></p></div><div class="tab-pane" id="adding-tags-page-3"><p>在新建文章的front-matter中添加： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tags:</span><br><span class="line">- tag1</span><br><span class="line">- tag2</span><br></pre></td></tr></table></figure> 或者
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tags: [tag1, tag2]</span><br></pre></td></tr></table></figure></p></div></div></div>
+<p>后续添加新文章时，在 front-matter 中添加 categories
+属性，即可收纳到该分类下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">    - folder</span><br><span class="line">    - folder&#x27;s child</span><br><span class="line">    - folder&#x27;s child&#x27;s child</span><br><span class="line">    - ...</span><br></pre></td></tr></table></figure>
+<p>例如这篇文章的 front-matter：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title: next主题在hexo的应用</span><br><span class="line">date: 2022-09-23 09:45:47</span><br><span class="line">tags:</span><br><span class="line">    - next</span><br><span class="line">    - hexo</span><br><span class="line">categories:</span><br><span class="line">    - 运维</span><br><span class="line">    - hexo</span><br></pre></td></tr></table></figure>
+<p>tags 功能同理：</p>
+<div class="tabs" id="adding-tags-page"><ul class="nav-tabs"><li class="tab active"><a href="#adding-tags-page-1">新建页面 →</a></li><li class="tab"><a href="#adding-tags-page-2">添加属性 →</a></li><li class="tab"><a href="#adding-tags-page-3">文章中添加标签</a></li></ul><div class="tab-content"><div class="tab-pane active" id="adding-tags-page-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="adding-tags-page-2"><p>在<code>tags/index.md</code>的 front-matter 中添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type: tags</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="adding-tags-page-3"><p>在新建文章的 front-matter 中添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tags:</span><br><span class="line">- tag1</span><br><span class="line">- tag2</span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tags: [tag1, tag2]</span><br></pre></td></tr></table></figure></div></div></div>
 
     </div>
 
@@ -418,8 +444,8 @@ tags功能同理：</p>
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/09/23/java%E8%AF%AD%E6%B3%95/" rel="prev" title="java语法">
-                  <i class="fa fa-chevron-left"></i> java语法
+                <a href="/2022/09/23/Markdown%E8%AF%AD%E6%B3%95/" rel="prev" title="Markdown语法">
+                  <i class="fa fa-chevron-left"></i> Markdown语法
                 </a>
             </div>
             <div class="post-nav-item">
@@ -458,13 +484,13 @@ tags功能同理：</p>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">4k</span>
+    <span title="站点总字数">6k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">5 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">

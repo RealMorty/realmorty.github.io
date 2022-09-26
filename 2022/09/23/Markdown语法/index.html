@@ -21,23 +21,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.realmorty.top","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.13.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="B - L - O - G">
-<meta property="og:url" content="https://www.realmorty.top/">
+    <meta name="description" content="markdown从typora到hexo的初步尝试">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法">
+<meta property="og:url" content="https://www.realmorty.top/2022/09/23/Markdown%E8%AF%AD%E6%B3%95/">
 <meta property="og:site_name" content="B - L - O - G">
+<meta property="og:description" content="markdown从typora到hexo的初步尝试">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.realmorty.top/images/next.svg">
+<meta property="og:image" content="https://i.loli.net/2021/06/09/2NzZtYASULIHCkb.png">
+<meta property="article:published_time" content="2022-09-23T01:41:29.000Z">
+<meta property="article:modified_time" content="2022-09-26T08:06:55.167Z">
 <meta property="article:author" content="Morty">
+<meta property="article:tag" content="markdown">
+<meta property="article:tag" content="语法">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.realmorty.top/images/next.svg">
 
 
-<link rel="canonical" href="https://www.realmorty.top/">
+<link rel="canonical" href="https://www.realmorty.top/2022/09/23/Markdown%E8%AF%AD%E6%B3%95/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.realmorty.top/2022/09/23/Markdown%E8%AF%AD%E6%B3%95/","path":"2022/09/23/Markdown语法/","title":"Markdown语法"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>B - L - O - G - Morty's blog</title>
+<title>Markdown语法 | B - L - O - G</title>
   
 
 
@@ -72,7 +81,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">B - L - O - G</h1>
+      <p class="site-title">B - L - O - G</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">Morty's blog</p>
@@ -132,7 +141,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -145,6 +154,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E6%A0%87%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">一、标题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98-%E7%A9%BA%E6%A0%BC"><span class="nav-number">2.</span> <span class="nav-text">这是一级标题 # + 空格</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98-%E7%A9%BA%E6%A0%BC"><span class="nav-number">2.1.</span> <span class="nav-text">这是二级标题 ## + 空格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98-%E7%A9%BA%E6%A0%BC"><span class="nav-number">2.1.1.</span> <span class="nav-text">这是三级标题 ### + 空格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98-%E7%A9%BA%E6%A0%BC"><span class="nav-number">2.1.2.</span> <span class="nav-text">这是四级标题 #### + 空格</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98-%E7%A9%BA%E6%A0%BC"><span class="nav-number">2.1.2.0.1.</span> <span class="nav-text">这是五级标题 ##### + 空格</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E5%AD%97%E4%BD%93"><span class="nav-number">3.</span> <span class="nav-text">二、字体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E5%BC%95%E7%94%A8ctrlshiftq"><span class="nav-number">4.</span> <span class="nav-text">三、引用(Ctrl+Shift+Q)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B%E5%88%86%E5%89%B2%E7%BA%BF"><span class="nav-number">5.</span> <span class="nav-text">四、分割线</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94%E5%9B%BE%E7%89%87"><span class="nav-number">6.</span> <span class="nav-text">五、图片</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95ctrlshifti"><span class="nav-number">6.1.</span> <span class="nav-text">语法(Ctrl+Shift+I)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AD%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="nav-number">7.</span> <span class="nav-text">六、超链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%83%E5%88%97%E8%A1%A8"><span class="nav-number">8.</span> <span class="nav-text">七、列表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8ctrlshift"><span class="nav-number">8.0.0.1.</span> <span class="nav-text">无序列表（Ctrl+Shift+]）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8ctrlshift"><span class="nav-number">8.0.0.2.</span> <span class="nav-text">有序列表(Ctrl+Shift+[)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E5%B5%8C%E5%A5%97"><span class="nav-number">8.0.0.3.</span> <span class="nav-text">列表嵌套</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AB%E8%A1%A8%E6%A0%BC"><span class="nav-number">9.</span> <span class="nav-text">八、表格</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B9%9D%E4%BB%A3%E7%A0%81"><span class="nav-number">10.</span> <span class="nav-text">九、代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%81%E6%92%AD%E6%94%BE%E8%A7%86%E9%A2%91"><span class="nav-number">11.</span> <span class="nav-text">十、播放视频</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%BB%91%E5%BA%95%E5%B8%B8%E7%94%A8%E8%88%92%E6%9C%8D%E7%9A%84%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2"><span class="nav-number">12.</span> <span class="nav-text">黑底常用舒服的字体颜色</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%97%B6%E5%BA%8F%E5%9B%BE%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="nav-number">13.</span> <span class="nav-text">时序图、流程图</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8-mermaid-%E7%BB%98%E5%88%B6-java-%E7%B1%BB%E5%9B%BE"><span class="nav-number">13.1.</span> <span class="nav-text">用 Mermaid 绘制 Java 类图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8-typora-%E4%B8%AD%E6%8D%A2%E8%A1%8C"><span class="nav-number">13.1.1.</span> <span class="nav-text">在 typora 中换行</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -214,317 +224,17 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.realmorty.top/2022/09/23/hexo%E8%AF%AD%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Morty">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="B - L - O - G">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | B - L - O - G">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/09/23/hexo%E8%AF%AD%E6%B3%95/" class="post-title-link" itemprop="url">hexo语法</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-09-23 10:38:05" itemprop="dateCreated datePublished" datetime="2022-09-23T10:38:05+08:00">2022-09-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%BF%90%E7%BB%B4/" itemprop="url" rel="index"><span itemprop="name">运维</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%BF%90%E7%BB%B4/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.1k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-            <div class="post-description">hexo语法总结，主要是一些小插件和流程块的使用。</div>
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="实用的-hexo-md-渲染组件">实用的 hexo md 渲染组件</h2>
-<h3 id="首页文章预览">首页文章预览</h3>
-<p>在文章中需要截断的地方插入以下代码即可：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/09/23/hexo%E8%AF%AD%E6%B3%95/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.realmorty.top/2022/09/23/next%E4%B8%BB%E9%A2%98%E5%9C%A8hexo%E7%9A%84%E5%BA%94%E7%94%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Morty">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="B - L - O - G">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | B - L - O - G">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/09/23/next%E4%B8%BB%E9%A2%98%E5%9C%A8hexo%E7%9A%84%E5%BA%94%E7%94%A8/" class="post-title-link" itemprop="url">next主题在hexo的应用</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-09-23 09:45:47" itemprop="dateCreated datePublished" datetime="2022-09-23T09:45:47+08:00">2022-09-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%BF%90%E7%BB%B4/" itemprop="url" rel="index"><span itemprop="name">运维</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%BF%90%E7%BB%B4/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>2.2k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
-    </span>
-</div>
-
-            <div class="post-description">next主题在hexo的部署与初步改造。</div>
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="next-主题插件">Next 主题插件</h2>
-<h3 id="mermaid">Mermaid</h3>
-<p><span class="exturl" data-url="aHR0cHM6Ly9tZXJtYWlkLWpzLmdpdGh1Yi5pby9tZXJtYWlkLWxpdmUtZWRpdG9yLw==">Mermaid
-在线生成网站<i class="fa fa-external-link-alt"></i></span></p>
-<pre class="mermaid">
-
-graph TD
-A[Christmas] --&gt;|Get money| B(Go shopping)
-B --&gt; C{Let me think}
-C --&gt;|One| D[Laptop]
-C --&gt;|Two| E[iPhone]
-C --&gt;|Three| F[fa:fa-car Car]
-</pre>
-<h3 id="pdf">PDF</h3>
-<div class="pdf-container" data-target="https://www.orimi.com/pdf-test.pdf" data-height="500px"></div>
-<hr />
-<h3 id="群组图片">群组图片</h3>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% grouppicture [number]-[layout] %&#125;</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure>
-<p>或者</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gp [number]-[layout] %&#125;</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>[number]</code>: 图片总数</li>
-<li><code>[layout]</code>: 布局</li>
-</ul>
-<p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% grouppicture 3-3 %&#125;</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">![](/images/next.svg)</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/next.svg" /></div><div class="group-picture-column"><img src="/images/next.svg" /></div><div class="group-picture-column"><img
-src="/images/next.svg" /></div></div></div>
-<h3 id="按钮">按钮</h3>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% button url, text, icon [class], [title] %&#125;</span><br></pre></td></tr></table></figure>
-<p>或者</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% btn url, text, icon [class], [title] %&#125;</span><br></pre></td></tr></table></figure>
-<p>示例:</p>
-<p>单链接：</p>
-<figure class="highlight jinja"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;text-center&quot;</span>&gt;</span></span><span class="template-tag">&#123;% <span class="name">btn</span> https://github.com, GitHub, fab fa-github fa-fw fa-lg, GitHub %&#125;</span><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<div class="text-center">
-<a class="btn" target="_blank" rel="noopener" href="https://github.com" title="GitHub"><i class="fab fa-github fa-fw fa-lg"></i>GitHub</a>
-</div>
-<p>前后链接：</p>
-<figure class="highlight jinja"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;text-center&quot;</span>&gt;</span></span><span class="template-tag">&#123;% <span class="name">btn</span> #, Previous Chapter, arrow-left fa-fw fa-lg, Previous Chapter (Full Image) %&#125;</span><span class="language-xml"> </span><span class="template-tag">&#123;% <span class="name">btn</span> #, Next Chapter, arrow-right fa-fw fa-lg, Next Chapter (Label) %&#125;</span><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<div class="text-center">
-<a class="btn" href="/docs/tag-plugins/full-image" title="Previous Chapter (Full Image)"><i class="fa fa-arrow-left fa-fw fa-lg"></i>Previous Chapter</a>
-<a class="btn" href="/docs/tag-plugins/label" title="Next Chapter (Label)"><i class="fa fa-arrow-right fa-fw fa-lg"></i>Next Chapter</a>
-</div>
-<p>其他按钮：</p>
-<a class="btn" href="#"><i class="fab fa-edge"></i></a>
-<p><code>&#123;% btn #,, fab fa-edge %&#125;</code></p>
-<a class="btn" href="#"><i class="fa fa-times"></i></a>
-<p><code>&#123;% btn #,, times %&#125;</code></p>
-<a class="btn" href="#"><i class="fa fa-circle-notch"></i></a>
-<p><code>&#123;% btn #,, circle-notch %&#125;</code></p>
-<a class="btn" href="#"><i class="fa fa-italic"></i></a>
-<p><code>&#123;% btn #,, italic %&#125;</code></p>
-<a class="btn" href="#"><i class="fab fa-scribd"></i></a>
-<p><code>&#123;% btn #,, fab fa-scribd %&#125;</code></p>
-<a class="btn" href="#"><i class="fab fa-google"></i></a>
-<p><code>&#123;% btn #,, fab fa-google %&#125;</code></p>
-<a class="btn" href="#"><i class="fab fa-chrome"></i></a>
-<p><code>&#123;% btn #,, fab fa-chrome %&#125;</code></p>
-<a class="btn" href="#"><i class="fab fa-opera"></i></a>
-<p><code>&#123;% btn #,, fab fa-opera %&#125;</code></p>
-<a class="btn" href="#"><i class="fab fa-opera"></i></a>
-<p><code>&#123;% btn #,, gem fa-rotate-270 %&#125;</code></p>
-<h2 id="添加评论功能">添加评论功能</h2>
-<p>依次尝试了 next 默认提供的几个评论插件：</p>
-<ul>
-<li>disqus: 国内被墙，不然做的最好的一个，next 官方采用本方案</li>
-<li>changyan: 追评 UI 个人觉得不够简洁</li>
-<li>livere: UI 不习惯</li>
-<li>gitalk: 国内网络环境不好，Network Error</li>
-<li>utterances: 很棒，缺点是不能追评</li>
-</ul>
-<p>暂时先用着 utterances。</p>
-<p>这里要吐槽一下
-gitalk，如果你和我一样域名类似于<code>realmorty.top</code>，那么在创建
-GitHub Application 时<code>Authorization callback URL</code>
-一定要是<code>https://realmorty.top</code>，其他的比如<code>https://www.realmorty.top</code>会报错：回调网址与
-GitHub 默认网址不符。另外 Homepage URL 和 Authorization callback URL
-我写的是一样的。</p>
-<h2 id="添加新的文件夹page">添加新的文件夹（page）</h2>
-<p>初始化的 hexo 没有 categories 功能，需要新建该分类。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>新建之后会自动生成<code>\source\categories\index.md</code>，在
-front-matter 中加入<code>type: categories</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2022-09-23 09:38:47</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>后续添加新文章时，在 front-matter 中添加 categories
-属性，即可收纳到该分类下。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">    - folder</span><br><span class="line">    - folder&#x27;s child</span><br><span class="line">    - folder&#x27;s child&#x27;s child</span><br><span class="line">    - ...</span><br></pre></td></tr></table></figure>
-<p>例如这篇文章的 front-matter：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title: next主题在hexo的应用</span><br><span class="line">date: 2022-09-23 09:45:47</span><br><span class="line">tags:</span><br><span class="line">    - next</span><br><span class="line">    - hexo</span><br><span class="line">categories:</span><br><span class="line">    - 运维</span><br><span class="line">    - hexo</span><br></pre></td></tr></table></figure>
-<p>tags 功能同理：</p>
-<div class="tabs" id="adding-tags-page"><ul class="nav-tabs"><li class="tab active"><a href="#adding-tags-page-1">新建页面 →</a></li><li class="tab"><a href="#adding-tags-page-2">添加属性 →</a></li><li class="tab"><a href="#adding-tags-page-3">文章中添加标签</a></li></ul><div class="tab-content"><div class="tab-pane active" id="adding-tags-page-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="adding-tags-page-2"><p>在<code>tags/index.md</code>的 front-matter 中添加：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type: tags</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="adding-tags-page-3"><p>在新建文章的 front-matter 中添加：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tags:</span><br><span class="line">- tag1</span><br><span class="line">- tag2</span><br></pre></td></tr></table></figure>
-<p>或者</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tags: [tag1, tag2]</span><br></pre></td></tr></table></figure></div></div></div>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://www.realmorty.top/2022/09/23/Markdown%E8%AF%AD%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -538,13 +248,13 @@ front-matter 中加入<code>type: categories</code></p>
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | B - L - O - G">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="Markdown语法 | B - L - O - G">
+      <meta itemprop="description" content="markdown从typora到hexo的初步尝试">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/09/23/Markdown%E8%AF%AD%E6%B3%95/" class="post-title-link" itemprop="url">Markdown语法</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Markdown语法
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -571,6 +281,13 @@ front-matter 中加入<code>type: categories</code></p>
     </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
     <span class="post-meta-break"></span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
@@ -596,7 +313,7 @@ front-matter 中加入<code>type: categories</code></p>
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="一标题">一、标题</h1>
+        <h1 id="一标题">一、标题</h1>
 <h1 id="这是一级标题-空格">这是一级标题 # + 空格</h1>
 <h2 id="这是二级标题-空格">这是二级标题 ## + 空格</h2>
 <h3 id="这是三级标题-空格">这是三级标题 ### + 空格</h3>
@@ -866,7 +583,6 @@ alt="img" />
 </figure>
 <details/>
 
-      
     </div>
 
     
@@ -874,110 +590,43 @@ alt="img" />
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
+          <div class="reward-container">
+  <div></div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/weixin.jpg" alt="Morty 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/alipay.jpg" alt="Morty 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
 </div>
 
+          <div class="post-tags">
+              <a href="/tags/markdown/" rel="tag"><i class="fa fa-tag"></i> markdown</a>
+              <a href="/tags/%E8%AF%AD%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 语法</a>
+          </div>
 
+        
 
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.realmorty.top/2022/09/22/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Morty">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="B - L - O - G">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | B - L - O - G">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/09/22/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-09-22 22:33:15" itemprop="dateCreated datePublished" datetime="2022-09-22T22:33:15+08:00">2022-09-22</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>367</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-            <div class="post-description">第一个hexo博客</div>
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very
-first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for
-more info. If you get any problems when using Hexo, you can find the
-answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or
-you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/09/22/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/09/23/next%E4%B8%BB%E9%A2%98%E5%9C%A8hexo%E7%9A%84%E5%BA%94%E7%94%A8/" rel="next" title="next主题在hexo的应用">
+                  next主题在hexo的应用 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -986,6 +635,8 @@ you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9
 
 
 
+
+    <div class="comments utterances-container"></div>
 </div>
   </main>
 
@@ -1075,7 +726,7 @@ you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://www.realmorty.top/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://www.realmorty.top/2022/09/23/Markdown%E8%AF%AD%E6%B3%95/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 <script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"realmorty/blog_issues","issue_term":"pathname","theme":"github-light"}</script>
 <script src="/js/third-party/comments/utterances.js"></script>
