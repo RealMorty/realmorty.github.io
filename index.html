@@ -276,14 +276,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.1k</span>
+      <span>1.7k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -295,7 +295,51 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="实用的-hexo-md-渲染组件">实用的 hexo md 渲染组件</h2>
+          <h2 id="日常写博客的-bash-流程">日常写博客的 bash 流程</h2>
+<ol type="1">
+<li>创建博客
+<ul>
+<li>hexo new post "file_name"</li>
+<li></li>
+</ul></li>
+<li>推送博文
+<ul>
+<li>hexo clean: 清理/public 文件夹</li>
+<li>hexo g -d: 重新生成/public 文件夹并推送到
+GitHub，博客网站依靠/public 的内容对外展示</li>
+<li>hexo s: 本地启动服务器，用于本地测试</li>
+</ul></li>
+</ol>
+<h2 id="用于同步博客源码的一般-git-流程">用于同步博客源码的一般 git
+流程</h2>
+<ol type="1">
+<li><p>项目刚开始建立时</p>
+<ul>
+<li><code>git init</code>: 在本地文件夹创建仓库</li>
+<li><code>git clone &lt;repo&gt;</code>: 从 GitHub
+拷贝项目到本地，一般可以从 GitHub 直接 copy 命令过来</li>
+</ul></li>
+<li><p>项目更新代码时</p>
+<ul>
+<li><code>git checkout -b &lt;branch_name&gt; origin/&lt;remote_branch&gt;</code>:
+拉取远程某特定分支到本地，并新建分支，切换到该分支</li>
+<li><code>git fetch origin</code> +
+<code>git merge origin/v0.1.20220925</code>: 获取远程更新的数据并同步
+merge 到本地，效果等同于<code>git pull</code></li>
+<li><code>git commit .</code>: 提交新修改的文件到本地暂存</li>
+<li><code>git push origin v0.1.20220925</code>: 将本地暂存文件 push
+到远程仓库</li>
+</ul></li>
+<li><p>一些 git info 的查看命令</p>
+<ul>
+<li><code>git config --list</code>: 查看 git 配置信息。</li>
+<li><code>git status</code>: 查看仓库当前状态，显示有变更的文件</li>
+<li><code>git log</code>: 查看历史提交信息</li>
+<li><code>git blame &lt;file&gt;</code>: 查看某个文件的历史修改信息</li>
+<li><code>git diff</code>: 比较暂存区文件和工作区文件的不同</li>
+</ul></li>
+</ol>
+<h2 id="实用的-hexo-md-渲染组件">实用的 hexo md 渲染组件</h2>
 <h3 id="首页文章预览">首页文章预览</h3>
 <p>在文章中需要截断的地方插入以下代码即可：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
@@ -1012,7 +1056,7 @@ you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">5 分钟</span>
+    <span title="站点阅读时长">6 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
