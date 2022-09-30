@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as n,a as s}from"./app.51ef48d6.js";const c={},o=s("p",null,"This is index.",-1),_=[o];function a(i,r){return t(),n("div",null,_)}const d=e(c,[["render",a],["__file","index.html.vue"]]);export{d as default};
