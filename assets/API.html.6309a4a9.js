@@ -1,0 +1,1 @@
+import{_ as t,o,c,a as e}from"./app.cdd99167.js";const _={},n=e("blockquote",null,[e("p",null,"API \u7F51\u7AD9\u5408\u96C6")],-1),s=[n];function l(a,r){return o(),c("div",null,s)}const d=t(_,[["render",l],["__file","API.html.vue"]]);export{d as default};
